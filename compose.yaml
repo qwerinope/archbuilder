@@ -1,0 +1,11 @@
+services:
+  archbuilder:
+    image: archbuilder
+    # environment:
+      # Values below are all defaults
+      # - GENERATEREPO=yes        # Generate repository database
+      # - REPONAME=archbuilder    # Set the name of the repository. Only used if GENERATEREPO is set to yes
+    container_name: archbuilder
+    restart: no
+    volumes:
+      - ./data:/data
