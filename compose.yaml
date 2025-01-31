@@ -1,6 +1,6 @@
 services:
   archbuilder:
-    image: archbuilder
+    image: ghcr.io/qweri0p/archbuilder:latest
     # environment:
       # Values below are all defaults
       # - GENERATEREPO=yes        # Generate repository database

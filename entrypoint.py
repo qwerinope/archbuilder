@@ -13,6 +13,7 @@ srcdir = datadir.joinpath('sources')
 srcdir.mkdir(exist_ok=True)
 
 pkgdir = datadir.joinpath('packages')
+shutil.rmtree(pkgdir)
 pkgdir.mkdir(exist_ok=True)
 
 srcdirs = [
