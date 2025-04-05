@@ -9,7 +9,7 @@ Make sure docker is installed.
 ### Using docker run
 
 ```sh
-docker run --rm --volume ./data:/data ghcr.io/qweri0p/archbuilder:latest
+docker run --rm --volume ./data:/data ghcr.io/qwerinope/archbuilder:latest
 ```
 
 Place the PKGBUILDs in the ./data/sources directory.
@@ -22,7 +22,7 @@ Create a docker-compose.yaml file with the following contents:
 ```yaml
 services:
   archbuilder:
-    image: ghcr.io/qweri0p/archbuilder:latest
+    image: ghcr.io/qwerinope/archbuilder:latest
     # environment:
       # Values below are all defaults
       # - GENERATEREPO=yes        # Generate repository database
@@ -31,7 +31,6 @@ services:
     restart: no
     volumes:
       - ./data:/data
-
 ```
 
 ## Configuration
